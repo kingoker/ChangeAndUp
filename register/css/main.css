@@ -1,0 +1,175 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+textarea:focus, input:focus
+{
+  outline: none;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+
+}
+
+.header{
+	display: grid;
+	grid-template-columns: 210px auto;
+	align-items: center;
+	height: 100px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.logo{
+	width: 170px;
+	padding-right: 38px;
+	border-right: 3px solid #FF9101;
+}
+
+.course_name{
+	margin-left: 60px;
+}
+
+.content{
+	width: 100%;
+	border: 1px solid #FFFFFF;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+	min-height: 100vh;
+}
+
+.wrapper{
+	display: grid;
+	min-width: 1130px;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 60px;
+    margin: 60px auto;
+}
+
+.greenbox{
+	margin: 0 auto;
+	display: grid;
+	grid-column-gap: 12px;
+	grid-template-columns: 2fr 4fr;
+	height: 300px;
+}
+
+.greenlight{
+	box-shadow: 0px 0px 20px #05FF00;
+	border-radius: 20px;
+}
+
+.right_box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 32px;
+	text-align: center;
+	background: linear-gradient(135deg, #FFF720 0%, #3CD500 100%);
+}
+
+.left_box{
+	text-align: left;
+	padding: 60px;
+}
+
+.left_box p{
+	display: block;
+	margin-top:  30px;
+	font-size: 18px;
+}
+
+.left_box span{
+	font-size: 24px;
+	font-weight: lighter;
+    color: #D2D2D2;
+}
+
+.purplebox{
+	margin: 0 auto;
+	display: grid;
+	height: 300px;
+	grid-column-gap: 12px;
+	grid-template-columns: 2fr 4fr;
+}
+
+.purplelight{
+	box-shadow: 0px 0px 20px #DB00FF;
+	border-radius: 20px;
+}
+
+.right_box_btm{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 32px;
+	text-align: center;
+	background: linear-gradient(135deg, #F97794 0%, #623AA2 100%);
+}
+
+.left_box_btm{
+	text-align: left;
+	padding: 60px;
+}
+
+.left_box_btm p{
+	display: block;
+	margin-top: 30px;
+	font-size: 18px;
+}
+
+.left_box_btm span{
+	font-weight: lighter;
+	font-size: 24px;
+    color: #D2D2D2;
+}
+
+.h2{
+	font-size: 24px;
+}
+
+/*адаптивность*/
+
+@media (max-width: 1130px) {
+	.wrapper{
+		min-width: 970px;
+	}
+
+}
+
+@media (max-width: 992px) {
+	.wrapper{
+		min-width: 750px;
+	}
+
+	.greenbox{
+	grid-template-columns: 1fr;
+	}
+
+	.purplebox{
+	margin-top: 30px;
+	grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 767px) {
+	.wrapper{
+		min-width: 480px;
+		margin: 60px 30px;
+	}
+}
+
+@media (max-width: 512px) {
+	.wrapper{
+		min-width: 336px;
+	}
+}

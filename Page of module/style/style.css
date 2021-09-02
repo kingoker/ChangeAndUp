@@ -1,0 +1,202 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+textarea:focus, input:focus
+{
+  outline: none;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+.header{
+	display: grid;
+	grid-template-columns: 210px auto;
+	align-items: center;
+	height: 100px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.logo{
+	width: 170px;
+	padding-right: 38px;
+	border-right: 3px solid #FF9101;
+}
+
+.course_name{
+	margin-left: 60px;
+}
+
+.course_name a {
+	float: left;
+}
+
+.course_name span{
+	color: #C0C0C0;
+}
+
+.content{
+	width: 100%;
+	border: 1px solid #FFFFFF;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+}
+
+.shadow{
+	border: 1px solid #FFFFFF;
+	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+	border-radius: 20px;
+}
+
+.wrapper{
+	display: grid;
+	grid-template-columns: 717px 350px;
+	grid-column-gap: 60px;
+	grid-row-gap: 60px;
+	width: 80%;
+	margin: 60px auto 60px auto;
+}
+
+.wrapper h1{
+	font-size: 24px;
+	font-weight: normal;
+	margin-top: 17px;
+}
+
+.wrapper h2{
+	margin: 20px 0 0 30px;
+	font-size: 24px;
+	font-weight: 300;
+}
+
+.wrapper h3{
+	text-align: center;
+	margin-top: 25px;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.video{
+	border-radius: 20px 20px 0px 0px;
+	height: 467px;
+	text-align: center;
+}
+
+.youtube{
+	width: 100%;
+	height: 407px;
+	background-color: #000;
+	margin-top: 17px;
+}
+
+.line{
+	margin-top: 25px;
+	width: 100%;
+	height: 3px;
+	background-color: #FF9101;
+}
+
+.homeworks{
+	height: 300px;
+}
+
+.home{
+	margin: 25px 7px 0 30px;
+	float: left;
+}
+
+.materials{
+	height: 300px;
+}
+
+.profile_photo{
+	float: left;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #C4C4C4;
+	margin: 30px 20px 0 30px;
+}
+
+.homework_text{
+	border: 1px solid #000;
+	border-radius: 20px;
+	resize: none;
+	padding: 10px;
+}
+
+.light_grey{
+	color: #C0C0C0;
+}
+
+.pointer1{
+	cursor: pointer;
+	transition-duration: 0.3s;
+}
+
+.pointer1:hover{
+	color: #FF9101;
+}
+
+.pointer1_active{
+	color: #FF9101;
+}
+
+.homework_done{
+	height: 160px;
+}
+
+.button_home{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	height: 30px;
+	width: 70%;
+	margin: 0 auto;
+	background-color: #0088cc;
+	border-radius: 15px;
+	margin-top: 30px;
+}
+
+iframe{
+	width: 100%;
+	height: 100%;
+}
+
+@media (max-width: 1130px) {
+
+	.wrapper{
+	grid-template-columns: 610px 300px;
+	min-width: 970px;
+	}
+
+}
+
+@media (max-width: 992px) {
+	.wrapper{
+		grid-template-columns: 1fr;
+		min-width: 750px;
+	}
+}
+
+@media (max-width: 767px) {
+	.wrapper{
+		min-width: 480px;
+	}
+}
+
+@media (max-width: 512px) {
+	.container{
+		min-width: 336px;
+	}
+}
